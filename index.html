@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" href="https://i.dlpng.com/static/png/6770178_preview.png">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>InterMovie v.101</title>
+  </head>
+  <body>
+    <!-- ========================== Navbar ========================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.dlpng.com/static/png/6770178_preview.png" style="max-height: 50px;">
+            InterMovie v.1
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >หน้าหลัก <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ดูหนังออนไลน์</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">หมวดหมู่</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Adventure</a>
+                  <a class="dropdown-item" href="#">Romance</a>
+                  <a class="dropdown-item" href="#">Survivor</a>
+                  <a class="dropdown-item" href="#">Horor</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ติดต่อลงโฆษณา</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-success my-2 my-sm-0" type="submit" onclick="alert('This function is not open');">
+              ค้นหา
+            </button>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================== Header ========================== -->
+        
+    <header class="d-flex justify-content-center">
+        <div
+          class="container"
+          style="
+            background-color: #000;
+            width: 90%;
+            padding: 35px 15px 35px 15px;
+            border-radius: 10px;
+          "
+        >
+          <div class="row">
+            <div>
+                  <img src="https://i.ytimg.com/vi/XGNwUD02gAA/maxresdefault.jpg" style="width: 100%; max-height: 720px"/>
+            </div>
+          </div>
+        </div>
+    </header>
+    <br /><br />
+    <!-- ========================== Banner Top ========================== -->
+    <section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <p>
+                <img
+                  src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                  class="imgBannerTopFooter"
+                />
+              </p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>
+                <img
+                  src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                  class="imgBannerTopFooter"
+                />
+              </p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <p>
+                <img
+                  src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                  class="imgBannerTopFooter"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <br /><br />
+    <br /><br />
+    <!-- ========================== Movie list ========================== -->
+
+    <section class="movie_list d-flex justify-content-center">
+      <div
+        class="container"
+        style="
+          background-color: #000;
+          width: 90%;
+          padding: 35px 15px 15px 15px;
+          border-radius: 10px;
+        "
+      >
+        <div class="row d-flex justify-content-between">
+            <div class="col-6">
+                <h4><i class='far fa-play-circle'></i> ดูหนังออนไลน์ HD Master ฟรี</h4>
+            </div>
+            <div class="col-6 text-right">
+                <a href="" class="btn btn-primary btn-sm">ดูทั้งหมด <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+        <hr style="color: #333; border: 1px solid #333;">
+        <div class="row" id="home_movie"></div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="" class="btn btn-danger btn-lg">ดูทั้งหมด <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- ========================== Banner Footer ========================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <p>
+              <img
+                src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                class="imgBannerTopFooter"
+              />
+            </p>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <p>
+              <img
+                src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                class="imgBannerTopFooter"
+              />
+            </p>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <p>
+              <img
+                src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg"
+                class="imgBannerTopFooter"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========================== Banner Footer ========================== -->
+    <footer class="imgBannerSticks">
+        <div class="container">
+          <div class="row areaStick">
+            <div class="col-12 col-md-12 d-flex justify-content-center">
+                <img src="https://findicons.com/files/icons/766/base_software/256/close_box_red.png" class="imgBannerStickClose" onclick="removeStick();">
+                <img src="https://www.santabarbarabusinessnetwork.com/wp-content/uploads/2018/07/Ad-Banner.jpg" class="imgBannerStick"
+                />
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- ========================== Cpoyright Footer ========================== -->
+    <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+             
+            <p class="text-muted">
+                <br>
+              Copyright @ Inter Movie,. All Right Reserved. Design by Inter-ADS.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    <!-- ========================== Custom javascript ========================== -->
+    <script src="api.js"></script>
+    <script src="assets/js/jqueryapi.js"></script>
+    <script>
+      movieHome();
+
+
+      function removeStick(){
+        document.querySelector(".imgBannerSticks").remove();
+      }
+
+      if(urlId){
+          document.querySelector(".movie_list").remove();
+      }
+    </script>
+
+
+  </body>
+</html>
